@@ -9,9 +9,9 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "bikeclub": {
+        "bikeclub_starter": {
             "type": "vcs",
-            "url": "https://github.com/NCole29/bikeclub"
+            "url": "https://github.com/NCole29/bikeclub_starter"
         }
     },
     "require": {
