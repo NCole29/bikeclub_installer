@@ -24,6 +24,20 @@ recipes:
       - bikeclub/bikeclub_page
     'FAQs':
       - bikeclub/bikeclub_faqs
+    'Events':
+      - bikeclub/bikeclub_events
+    'Webform nodes':
+      - bikeclub/bikeclub_webform_nodes
+    'CiviCRM configuration ':
+      - bikeclub/bikeclub_civicrm
+    'Default content':
+      - bikeclub/bikeclub_default_content
+    'Editorial workflow':
+      - bikeclub/bikeclub_editorial_workflow
+    'Member directory':
+      - bikeclub/bikeclub_member_directory
+    'Paragraph types':
+      - bikeclub/bikeclub_paragraph_types
     
 # Explicitly provide an empty list of themes -- this prevents the installer from
 # injecting Stark into it.
