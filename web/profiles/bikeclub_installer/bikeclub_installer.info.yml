@@ -8,36 +8,18 @@ distribution:
   name: Drupal for Bike Clubs
   install:
     theme: bikeclub_installer_theme
-    finish_url: '/'
-
+    finish_url: '/welcome-drupal'    
 forms:
   - '\Drupal\RecipeKit\Installer\Form\RecipesForm'
   - '\Drupal\RecipeKit\Installer\Form\SiteNameForm'
-
 recipes:
   required: 
     - bikeclub/bikeclub_starter
   optional: 
     'Announcements':
       - bikeclub/bikeclub_announcements
-    'Basic page':
-      - bikeclub/bikeclub_page
     'FAQs':
       - bikeclub/bikeclub_faqs
-    'Events':
-      - bikeclub/bikeclub_events
-    'Webform nodes':
-      - bikeclub/bikeclub_webform_nodes
-    'CiviCRM configuration ':
-      - bikeclub/bikeclub_civicrm
-    'Default content':
-      - bikeclub/bikeclub_default_content
-    'Editorial workflow':
-      - bikeclub/bikeclub_editorial_workflow
-    'Member directory':
-      - bikeclub/bikeclub_member_directory
-    'Paragraph types':
-      - bikeclub/bikeclub_paragraph_types
     
 # Explicitly provide an empty list of themes -- this prevents the installer from
 # injecting Stark into it.

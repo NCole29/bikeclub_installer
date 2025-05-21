@@ -1,113 +1,94 @@
 {
-    "name": "bikeclub/bikeclub_installer",
-    "version": "1.0.1",
-    "description": "Drupal-for-Bike-Clubs is built on Drupal and CiviCRM, providing tools for membership, event registration, ride calendar, announcements, and more.",
-    "type": "project",
-    "license": "GPL-2.0-or-later",    
-    "repositories": {
-      "drupal": {
-        "type": "composer",
-        "url": "https://packages.drupal.org/8"
-      },
-      "bikeclub_starter": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_starter" },
-      "bikeclub_announcements": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_announcements" },
-      "bikeclub_banner": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_banner" },		      
-      "bikeclub_civiconfig": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_civiconfig" },
-      "bikeclub_civicrm": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_civicrm" },
-      "bikeclub_content_type_base": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_content_type_base" },      
-      "bikeclub_default_content": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_default_content" },    
-      "bikeclub_editorial_workflow": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_editorial_workflow" },
-      "bikeclub_events": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_events" },
-      "bikeclub_faqs": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_faqs" },
-      "bikeclub_field_storage_registration": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_field_storage_registration" },
-      "bikeclub_locations": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_locations" },
-      "bikeclub_media": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_media" },
-      "bikeclub_member_directory": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_member_directory" },
-      "bikeclub_olivero": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_olivero" },
-      "bikeclub_page": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_page" },
-      "bikeclub_paragraph_types": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_paragraph_types" },    
-      "bikeclub_webform_nodes": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_webform_nodes" },
-      "user_contacts": {"type": "vcs", "url": "https://github.com/NCole29/user_contacts" }      
+  "name": "bikeclub/bikeclub_installer",
+  "version": "1.0.1",
+  "description": "Drupal-for-Bike-Clubs is built on Drupal and CiviCRM, providing tools for membership, event registration, ride calendar, announcements, and more.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",    
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
-    "require": {
-      "bikeclub/bikeclub_starter": ">=1.0",
-      "bikeclub/bikeclub_announcements": ">=1.0",
-      "bikeclub/bikeclub_civiconfig": ">=1.0",
-      "bikeclub/bikeclub_civicrm": ">=1.0",
-      "bikeclub/bikeclub_default_content": ">=1.0",
-      "bikeclub/bikeclub_editorial_workflow": ">=1.0",
-      "bikeclub/bikeclub_events": ">=1.0",
-      "bikeclub/bikeclub_faqs": ">=1.0",
-      "bikeclub/bikeclub_member_directory": ">=1.0",
-      "bikeclub/bikeclub_olivero": ">=1.0",
-      "bikeclub/bikeclub_page": ">=1.0",
-      "bikeclub/bikeclub_paragraph_types": ">=1.0",
-      "bikeclub/bikeclub_webform_nodes": ">=1.0",
-      "bikeclub/user_contacts": ">=1.0",
-      "civicrm/civicrm-core": "^6.2",
-      "civicrm/civicrm-drupal-8": "^6.2",
-      "civicrm/civicrm-packages": "^6.2",
-      "civicrm/cli-tools": "^2025.05",
-      "composer/installers": "^2.3",
-      "drupal/core-composer-scaffold": "^11.1.1",
-      "drupal/core-project-message": "^11.1.1",
-      "drupal/core-recommended": "^11.1.1",
-      "drupal/project_browser": "@alpha",
-      "drupal/recipe_installer_kit": "^1.0.0-alpha3",
-      "drupal/webform": "@beta",        
-      "drush/drush": "^13"
+  "repositories": {
+    "bikeclub_announcements": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_announcements" },
+    "bikeclub_faqs": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_faqs" },
+    "bikeclub_olivero": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_olivero" },
+    "bikeclub_page": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_page" },
+    "bikeclub_starter": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_starter" },
+    "user_contacts": {"type": "vcs", "url": "https://github.com/NCole29/user_contacts" }      
+	  
+  },
+  "require": {
+    "bikeclub/bikeclub_announcements": ">=1.0",
+    "bikeclub/bikeclub_faqs": ">=1.0",
+    "bikeclub/bikeclub_olivero": ">=1.0",
+    "bikeclub/bikeclub_page": ">=1.0",
+    "bikeclub/bikeclub_starter": ">=1.0",
+    "bikeclub/user_contacts": ">=1.0",
+    "civicrm/civicrm-core": "^6.2",
+    "civicrm/civicrm-drupal-8": "^6.2",
+    "civicrm/civicrm-packages": "^6.2",
+    "civicrm/cli-tools": "^2025.05",
+    "composer/installers": "^2.3",
+    "drupal/core-composer-scaffold": "^11.1.1",
+    "drupal/core-project-message": "^11.1.1",
+    "drupal/core-recommended": "^11.1.1",
+    "drupal/project_browser": "@alpha",
+    "drupal/recipe_installer_kit": "^1.0.0-alpha3",
+    "drupal/webform": "@beta",        
+    "drush/drush": "^13"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "civicrm/civicrm-asset-plugin": true,
+      "civicrm/composer-compile-plugin": true,
+      "civicrm/composer-downloads-plugin": true,
+      "composer/installers": true,
+      "cweagans/composer-patches": true,			
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true,
+      "php-http/discovery": true
     },
-    "conflict": {
-      "drupal/drupal": "*"
+  "sort-packages": true,
+  "optimize-autoloader": true
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-      "allow-plugins": {
-        "civicrm/civicrm-asset-plugin": true,
-        "civicrm/composer-compile-plugin": true,
-        "civicrm/composer-downloads-plugin": true,
-        "composer/installers": true,
-        "cweagans/composer-patches": true,			
-        "drupal/core-composer-scaffold": true,
-        "drupal/core-project-message": true,
-        "php-http/discovery": true
-      },
-      "sort-packages": true,
-      "optimize-autoloader": true
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "recipes/{$name}": ["type:drupal-recipe"]			
     },
-    "extra": {
-      "drupal-scaffold": {
-        "locations": {
-          "web-root": "web/"
-        }
-      },
-      "installer-paths": {
-        "web/core": ["type:drupal-core"],
-        "web/libraries/{$name}": ["type:drupal-library"],
-        "web/modules/contrib/{$name}": ["type:drupal-module"],
-        "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-        "web/themes/contrib/{$name}": ["type:drupal-theme"],
-        "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-        "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-        "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-        "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-        "recipes/{$name}": ["type:drupal-recipe"]			
-      },
-      "drupal-core-project-message": {
-        "include-keys": ["homepage", "support"],
-        "post-create-project-cmd-message": [
-          "<bg=blue;fg=white></>",
-          "<bg=blue;fg=white>Congratulations, you’ve installed Drupal-for-Bike-Clubs</>",
-          "<bg=blue;fg=white> including CiviCRM for membership and event registration!</>",
-          "<bg=blue;fg=white>                                                   </>",
-          "",
-          "<bg=yellow;fg=black>Next steps</>:",
-          "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-          "  * Get support: https://drupal.org/support",
-          "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
-        ]
-      },
-      "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
-    }
+    "drupal-core-project-message": {
+      "include-keys": ["homepage", "support"],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white></>",
+        "<bg=blue;fg=white>Congratulations, you’ve installed Drupal-for-Bike-Clubs</>",
+        "<bg=blue;fg=white> including CiviCRM for membership and event registration!</>",
+        "<bg=blue;fg=white>                                                   </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Get support: https://drupal.org/support",
+        "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
+      ]
+    },
+  "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
   }
+}
