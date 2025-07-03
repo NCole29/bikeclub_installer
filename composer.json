@@ -15,51 +15,69 @@
         },
         "bikeclub_announcements": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_announcements" },
         "bikeclub_banner": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_banner" },
+        "bikeclub_civicrm": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_civicrm" },
+        "bikeclub_civiconfig": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_civiconfig" },
         "bikeclub_content_type_base": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_content_type_base" },
-        "bikeclub_default_content": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_default_content" },    
+        "bikeclub_default_content": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_default_content" },
         "bikeclub_dev": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_dev" },
         "bikeclub_editorial_workflow": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_editorial_workflow" },
+        "bikeclub_events": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_events" },
         "bikeclub_faqs": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_faqs" },
-        "bikeclub_media": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_media" },	
+        "bikeclub_field_storage_registration": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_field_storage_registration" },
+        "bikeclub_leader": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_leader" },
+        "bikeclub_locations": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_locations" },
+        "bikeclub_media": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_media" },
         "bikeclub_member_directory": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_member_directory" },
-        "bikeclub_olivero": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_olivero" },
         "bikeclub_page": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_page" },
-        "bikeclub_paragraph_types": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_paragraph_types" },    
+        "bikeclub_paragraph_types": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_paragraph_types" },
+        "bikeclub_report": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_report" },
+        "bikeclub_ride": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_ride" },
+        "bikeclub_solo": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_solo" },
         "bikeclub_starter": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_starter" },
         "bikeclub_webform_nodes": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_webform_nodes" },
-        "user_contacts": {"type": "vcs", "url": "https://github.com/NCole29/user_contacts" }      
+        "user_contactlink": {"type": "vcs", "url": "https://github.com/NCole29/user_contactlink" }
     },
     "require": {
         "bikeclub/bikeclub_announcements": ">=1.0",
         "bikeclub/bikeclub_banner": ">=1.0",
+        "bikeclub/bikeclub_civicrm": ">=1.0",
+        "bikeclub/bikeclub_civiconfig": ">=1.0",
         "bikeclub/bikeclub_content_type_base": ">=1.0",
         "bikeclub/bikeclub_default_content": ">=1.0",
-		"bikeclub/bikeclub_dev": ">=1.0",
+        "bikeclub/bikeclub_dev": ">=1.0",
         "bikeclub/bikeclub_editorial_workflow": ">=1.0",
+        "bikeclub/bikeclub_events": ">=1.0",
         "bikeclub/bikeclub_faqs": ">=1.0",
+        "bikeclub/bikeclub_field_storage_registration": ">=1.0",
+        "bikeclub/bikeclub_leader": ">=1.0",
+        "bikeclub/bikeclub_locations": ">=1.0",
         "bikeclub/bikeclub_media": ">=1.0",
         "bikeclub/bikeclub_member_directory": ">=1.0",
-        "bikeclub/bikeclub_olivero": ">=1.0",
         "bikeclub/bikeclub_page": ">=1.0",
         "bikeclub/bikeclub_paragraph_types": ">=1.0",
+        "bikeclub/bikeclub_report": ">=1.0",
+        "bikeclub/bikeclub_ride": ">=1.0",
+        "bikeclub/bikeclub_solo": ">=1.0",
         "bikeclub/bikeclub_starter": ">=1.0",
         "bikeclub/bikeclub_webform_nodes": ">=1.0",
-        "bikeclub/user_contacts": ">=1.0",
+        "bikeclub/user_contactlink": ">=1.0",
         "civicrm/civicrm-core": "^6.2",
         "civicrm/civicrm-drupal-8": "^6.2",
         "civicrm/civicrm-packages": "^6.2",
         "civicrm/cli-tools": "^2025.05",
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^11.1.1",
         "drupal/core-project-message": "^11.1.1",
         "drupal/core-recommended": "^11.1.1",
         "drupal/project_browser": "@alpha",
         "drupal/recipe_installer_kit": "^1.0.0-alpha3",
+		"drupal/drupal_cms_olivero": "^1.0",
+		"drupal/solo": "^1.0",
         "drupal/webform": "@beta",        
         "drush/drush": "^13",
         "npm-asset/fonticonpicker--fonticonpicker": ">=1.0",
         "npm-asset/fortawesome--fontawesome-free": "5.15",
-		"wikimedia/composer-merge-plugin": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -68,9 +86,6 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
-            "civicrm/civicrm-asset-plugin": true,
-            "civicrm/composer-compile-plugin": true,
-            "civicrm/composer-downloads-plugin": true,
             "composer/installers": true,
             "cweagans/composer-patches": true,			
             "drupal/core-composer-scaffold": true,
@@ -100,7 +115,8 @@
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "recipes/{$name}": ["type:drupal-recipe"]			
+            "web/sites/default/files/civicrm/ext/{$name}/": ["type:civicrm-ext"],
+            "recipes/{$name}": ["type:drupal-recipe"]
         },
         "merge-plugin": {
             "include": [
@@ -122,6 +138,7 @@
                 "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
             ]
         },
-        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
+        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"],
+        "enable-patching": "true"
     }
 }

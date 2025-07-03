@@ -7,11 +7,13 @@ description: 'Provides install-time tweaks. Not to be used in production.'
 distribution:
   name: Drupal for Bike Clubs
   install:
+    finish_url: '/node'
     theme: bikeclub_installer_theme
-    finish_url: '/welcome-drupal'    
+    
 forms:
   - '\Drupal\RecipeKit\Installer\Form\RecipesForm'
   - '\Drupal\RecipeKit\Installer\Form\SiteNameForm'
+  
 recipes:
   required: 
     - bikeclub/bikeclub_starter
@@ -24,5 +26,4 @@ recipes:
 # Explicitly provide an empty list of themes -- this prevents the installer from
 # injecting Stark into it.
 # @see install_profile_info()
-themes: []
-
+#themes: []
