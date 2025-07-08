@@ -86,6 +86,9 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
+            "civicrm/civicrm-asset-plugin": true,
+            "civicrm/composer-compile-plugin": true,
+            "civicrm/composer-downloads-plugin": true,
             "composer/installers": true,
             "cweagans/composer-patches": true,			
             "drupal/core-composer-scaffold": true,
@@ -96,6 +99,7 @@
         "optimize-autoloader": true
     },
     "extra": {
+		"composer-exit-on-patch-failure": true,
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -139,6 +143,7 @@
             ]
         },
         "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"],
-        "enable-patching": "true"
+        "enable-patching": "true",
+		"compile-mode": "all"
     }
 }
