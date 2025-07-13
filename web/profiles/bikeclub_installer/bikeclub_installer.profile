@@ -50,11 +50,11 @@ function bikeclub_installer_form_alter(array &$form, FormStateInterface $form_st
     $form['civicrm'] = [
       '#type' => 'details',
       '#title' => t('Read before you begin'),
-      '#markup' => t('CiviCRM installation takes time. Please be patient.'), ];
+      '#markup' => t('Select CiviCRM below, for membership and event registration. CiviCRM installation takes time. Please be patient.'), ];
       
     $form['help'] = [
       '#prefix' => '<p class="cms-installer__subhead">',
-      '#markup' => t('You can select pre-configured types of content now, or add them later.'),
+      '#markup' => t('You can select pre-configured types of content now, or add them later. Those listed do not depend on CiviCRM.'),
       '#suffix' => '</p>',
     ];
   }

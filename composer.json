@@ -16,7 +16,7 @@
         "bikeclub_announcements": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_announcements" },
         "bikeclub_banner": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_banner" },
         "bikeclub_civicrm": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_civicrm" },
-        "bikeclub_civiconfig": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_civiconfig" },
+        "bikeclub_civicrm_config": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_civicrm_config" },
         "bikeclub_content_type_base": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_content_type_base" },
         "bikeclub_default_content": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_default_content" },
         "bikeclub_dev": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_dev" },
@@ -32,6 +32,8 @@
         "bikeclub_paragraph_types": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_paragraph_types" },
         "bikeclub_report": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_report" },
         "bikeclub_ride": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_ride" },
+        "bikeclub_dxpr": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_dxpr" },
+        "bikeclub_olivero": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_olivero" },
         "bikeclub_solo": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_solo" },
         "bikeclub_starter": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_starter" },
         "bikeclub_webform_nodes": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_webform_nodes" },
@@ -41,7 +43,7 @@
         "bikeclub/bikeclub_announcements": "dev-main",
         "bikeclub/bikeclub_banner": "dev-main",
         "bikeclub/bikeclub_civicrm": "dev-main",
-        "bikeclub/bikeclub_civiconfig": "dev-main",
+        "bikeclub/bikeclub_civicrm_config": "dev-main",
         "bikeclub/bikeclub_content_type_base": "dev-main",
         "bikeclub/bikeclub_default_content": "dev-main",
         "bikeclub/bikeclub_dev": "dev-main",
@@ -57,6 +59,8 @@
         "bikeclub/bikeclub_paragraph_types": "dev-main",
         "bikeclub/bikeclub_report": "dev-main",
         "bikeclub/bikeclub_ride": "dev-main",
+        "bikeclub/bikeclub_dxpr": "dev-main",
+        "bikeclub/bikeclub_olivero": "dev-main",
         "bikeclub/bikeclub_solo": "dev-main",
         "bikeclub/bikeclub_starter": "dev-main",
         "bikeclub/bikeclub_webform_nodes": "dev-main",
@@ -67,17 +71,15 @@
         "civicrm/cli-tools": "^2025.05",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "^11.1.1",
-        "drupal/core-project-message": "^11.1.1",
-        "drupal/core-recommended": "^11.1.1",
+        "drupal/core-composer-scaffold": "^11.1.8",
+        "drupal/core-project-message": "^11.1.8",
+        "drupal/core-recommended": "^11.1.8",
         "drupal/project_browser": "@alpha",
         "drupal/recipe_installer_kit": "^1.0.0-alpha3",
-		"drupal/drupal_cms_olivero": "^1.0",
-		"drupal/solo": "^1.0",
-        "drupal/webform": "@beta",        
+        "drupal/webform": "@beta",
         "drush/drush": "^13",
         "npm-asset/fonticonpicker--fonticonpicker": ">=1.0",
-        "npm-asset/fortawesome--fontawesome-free": "5.15",
+        "npm-asset/fortawesome--fontawesome-free": "5.15"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -90,7 +92,7 @@
             "civicrm/composer-compile-plugin": true,
             "civicrm/composer-downloads-plugin": true,
             "composer/installers": true,
-            "cweagans/composer-patches": true,			
+            "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "php-http/discovery": true
@@ -99,7 +101,7 @@
         "optimize-autoloader": true
     },
     "extra": {
-		"composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": true,
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -144,6 +146,6 @@
         },
         "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"],
         "enable-patching": "true",
-		"compile-mode": "all"
+        "compile-mode": "all"
     }
 }

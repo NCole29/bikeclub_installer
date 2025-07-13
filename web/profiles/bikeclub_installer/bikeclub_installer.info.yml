@@ -18,8 +18,12 @@ recipes:
   required: 
     - bikeclub/bikeclub_starter
   optional: 
+    'CiviCRM':
+      - bikeclub/bikeclub_civicrm
     'Announcements':
       - bikeclub/bikeclub_announcements
+    'Basic pages':
+      - bikeclub/bikeclub_page
     'FAQs':
       - bikeclub/bikeclub_faqs
     
