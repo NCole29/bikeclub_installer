@@ -30,4 +30,4 @@ recipes:
 # Explicitly provide an empty list of themes -- this prevents the installer from
 # injecting Stark into it.
 # @see install_profile_info()
-#themes: []
+themes: []
