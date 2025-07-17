@@ -44,21 +44,19 @@ function bikeclub_installer_install_tasks_alter(array &$tasks, array $install_st
 function bikeclub_installer_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
   Hooks::formAlter($form, $form_state, $form_id);
 
-  /*
   if ($form_id == 'installer_recipes_form') {
-    $form['#title'] = t('Get started');
+
     $form['civicrm'] = [
-      '#type' => 'details',
-      '#title' => t('Read before you begin'),
-      '#markup' => t('Select CiviCRM below, for membership and event registration. CiviCRM installation takes time. Please be patient.'), ];
-      
-    $form['help'] = [
-      '#prefix' => '<p class="cms-installer__subhead">',
-      '#markup' => t('You can select pre-configured types of content now, or add them later. Those listed do not depend on CiviCRM.'),
-      '#suffix' => '</p>',
+      '#markup' => t('Membership and Events recipes require CiviCRM and are available after installation.</br>CiviCRM installation takes time. Please be patient.'), 
+      '#weight' => -90,
     ];
+   $form['add_ons']['text'] = [
+    '#prefix' => '<p class="cms-installer__info">',
+    '#markup' => t('After installation, go to <em>Configuration > Development > Performance</em> and click <strong>CLEAR ALL CACHES</strong>.'),
+    '#suffix' => '</p>',
+    '#weight' => 100,
+  ];
   }
-    */
 }
 
 /**

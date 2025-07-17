@@ -62,19 +62,13 @@ function bikeclub_installer_theme_form_installer_recipes_form_alter(array &$form
 
   $form['help'] = [
     '#prefix' => '<p class="cms-installer__subhead">',
-    '#markup' => t('You can select pre-configured types of content now, or add them later.'),
+    '#markup' => t('You can select pre-configured types of content now, or add them later.</br>'),
     '#suffix' => '</p>',
     '#weight' => -100,
   ];
   $form['add_ons'] += [
     '#prefix' => '<div class="cms-installer__form-group">',
     '#suffix' => '</div>',
-  ];
-  $form['add_ons']['help'] = [
-    '#prefix' => '<p class="cms-installer__info">',
-    '#markup' => t('Don’t see what you’re looking for? You can set up customized content later.'),
-    '#suffix' => '</p>',
-    '#weight' => 100,
   ];
   $form['svg'] = [
     '#theme' => 'step_svg',
