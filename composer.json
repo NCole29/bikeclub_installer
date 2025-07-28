@@ -65,15 +65,16 @@
         "civicrm/cli-tools": "^2025.05",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "^11.1.8",
-        "drupal/core-project-message": "^11.1.8",
-        "drupal/core-recommended": "^11.1.8",
+        "drupal/core-composer-scaffold": "^11.1.6",
+        "drupal/core-project-message": "^11.1.6",
+        "drupal/core-recommended": "^11.1.6",
         "drupal/project_browser": "@alpha",
         "drupal/recipe_installer_kit": "^1.0.0-alpha3",
         "drupal/webform": "@beta",
         "drush/drush": "^13",
         "npm-asset/fonticonpicker--fonticonpicker": ">=1.0",
-        "npm-asset/fortawesome--fontawesome-free": "5.15"
+        "npm-asset/fortawesome--fontawesome-free": "5.15",
+        "wikimedia/composer-merge-plugin": "^2.1"
     },
     "conflict": {
         "drupal/drupal": "*"
