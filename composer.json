@@ -34,8 +34,7 @@
         "bikeclub_olivero": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_olivero" },
         "bikeclub_solo": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_solo" },
         "bikeclub_starter": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_starter" },
-        "bikeclub_webform_nodes": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_webform_nodes" },
-        "user_contactlink": {"type": "vcs", "url": "https://github.com/NCole29/user_contactlink" }
+        "bikeclub_webform_nodes": {"type": "vcs", "url": "https://github.com/NCole29/bikeclub_webform_nodes" }
     },
     "require": {
         "bikeclub/bikeclub": "dev-main",
@@ -60,7 +59,6 @@
         "bikeclub/bikeclub_solo": "dev-main",
         "bikeclub/bikeclub_starter": "dev-main",
         "bikeclub/bikeclub_webform_nodes": "dev-main",
-        "bikeclub/user_contactlink": "dev-main",
         "civicrm/civicrm-core": "^6.5",
         "civicrm/civicrm-drupal-8": "^6.5",
         "civicrm/civicrm-packages": "^6.5",
